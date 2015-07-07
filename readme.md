@@ -25,8 +25,8 @@ Example code:
 </ul>
 
 ```javascript
-var tabs = document.getElementByTagName('paper-vert-tabs');
-var pages = document.getElementByTagName('neon-animated-pages');
+var tabs = document.getElementsByTagName('paper-vert-tabs')[0];
+var pages = document.getElementsByTagName('neon-animated-pages')[0];
 //change the page based on tab selection
 tabs.addEventListener('iron-select', function() {
 	pages.select(tabs.selected);
