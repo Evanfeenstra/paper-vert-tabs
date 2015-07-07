@@ -16,6 +16,19 @@ Example code:
 
 <h3>Attributes</h3>
 <ul>
-<li><strong>align-left</strong>: (Boolean) If true, the selection bar will align to the left side of the tabs. Default is to the right side<li>
+<li><strong>align-left</strong>: (Boolean) If true, the selection bar will align to the left side of the tabs. Default: false.</li>
+<li><strong>no-bar</strong>: (Boolean) If true, the selection bar will not be shown. Default: false.</li>
+<li><strong>no-slide</strong>: (Boolean) If true, the slide effect for the selection bar will be disabled. Default: false.</li>
+<li><strong>no-ink</strong>: (Boolean) If true, the ink ripple effect is disabled. Default: false.</li>
+<li>Other attributes from <a href="https://elements.polymer-project.org/elements/paper-tabs">Paper Tabs</a> should work as well.</li>
+<li><strong>selected</strong>: (Number) Gets or sets the selected element. The default is to use the index of the item. For example:<li>
 </ul>
-The selection bar defaults to the right side of the tabs. To align left, just add the align-left attribute to your paper-vert-tabs.
+
+```javascript
+var tabs = document.getElementByTagName('paper-vert-tabs');
+var pages = document.getElementByTagName('neon-animated-pages');
+//change the page based on tab selection
+tabs.addEventListener('iron-select', function() {
+	pages.select(tabs.selected);
+}
+```
