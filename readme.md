@@ -5,7 +5,7 @@
 These tabs work just like regular <a href="https://elements.polymer-project.org/elements/paper-tabs">Paper Tabs</a> except of course they are aligned vertically!
 
 Example code:
-'''html
+'''
 <link rel="import" href="../bower_components/paper-vert-tabs/paper-vert-tabs.html">
 
 <paper-vert-tabs>
