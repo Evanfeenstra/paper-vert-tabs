@@ -14,4 +14,8 @@ Example code:
 </paper-vert-tabs>
 ```
 
+<h3>Attributes</h3>
+<ul>
+<li><strong>align-left</strong>: (Boolean) If true, the selection bar will align to the left side of the tabs. Default is to the right side<li>
+</ul>
 The selection bar defaults to the right side of the tabs. To align left, just add the align-left attribute to your paper-vert-tabs.
