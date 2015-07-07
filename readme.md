@@ -21,7 +21,7 @@ Example code:
 <li><strong>no-slide</strong>: (Boolean) If true, the slide effect for the selection bar will be disabled. Default: false.</li>
 <li><strong>no-ink</strong>: (Boolean) If true, the ink ripple effect is disabled. Default: false.</li>
 <li>Other attributes from <a href="https://elements.polymer-project.org/elements/paper-tabs">Paper Tabs</a> should work as well.</li>
-<li><strong>selected</strong>: (Number) Gets or sets the selected element. The default is to use the index of the item. For example:<li>
+<li><strong>selected</strong>: (Number) Gets or sets the selected element. The default is to use the index of the item. For example:</li>
 </ul>
 
 ```javascript
