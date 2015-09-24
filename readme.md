@@ -4,14 +4,21 @@
 
 These tabs work just like regular <a href="https://elements.polymer-project.org/elements/paper-tabs">Paper Tabs</a> except of course they are aligned vertically!
 
-Example code:
 ```html
 <link rel="import" href="../bower_components/paper-vert-tabs/paper-vert-tabs.html">
 
-<paper-vert-tabs>
+<paper-vert-tabs id="tabs" selected="0">
 	<paper-tab>Tab 1</paper-tab>
 	<paper-tab>Tab 2</paper-tab>
 </paper-vert-tabs>
+```
+```javascript
+var tabs = document.getElementById('tabs');
+var pages = document.getElementsByTagName('neon-animated-pages')[0];
+//change the page based on tab selection
+tabs.addEventListener('iron-select', function() {
+	pages.select(tabs.selected);
+}
 ```
 
 <h3>Attributes</h3>
@@ -24,11 +31,4 @@ Example code:
 <li><strong>selected</strong>: (Number) Gets or sets the selected element. The default is to use the index of the item. For example:</li>
 </ul>
 
-```javascript
-var tabs = document.getElementsByTagName('paper-vert-tabs')[0];
-var pages = document.getElementsByTagName('neon-animated-pages')[0];
-//change the page based on tab selection
-tabs.addEventListener('iron-select', function() {
-	pages.select(tabs.selected);
-}
-```
+
